@@ -1,2 +1,63 @@
-# htmlunit-android
-HtmlUnit packaged for Android
+# HtmlUnit Android package
+
+Version 2.56.0 / December 12, 2021
+
+:heart: [Sponsor](https://github.com/sponsors/rbri)
+
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.sourceforge.htmlunit/htmlunit/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.sourceforge.htmlunit/htmlunit)
+
+**Homepage**
+
+[htmlunit.sourceforge.io](https://github.com/HtmlUnit/htmlunit-android)
+
+**News**
+
+[HtmlUnit@Twitter](https://twitter.com/HtmlUnit "https://twitter.com/HtmlUnit")
+
+**Download**
+
+For maven, you would add:
+
+    <dependency>
+        <groupId>net.sourceforge.htmlunit</groupId>
+        <artifactId>htmlunit-android</artifactId>
+        <version>2.56.0</version>
+    </dependency>
+
+Overview
+--------
+HtmlUnit is a "GUI-Less browser for Java programs" usually runs on every platform supported by java.
+
+But Android is a bit different because the Android SDK already includes some (old) classes from  the Apache HttpClient.
+HtmlUnit also uses the HttpClient but a more recent version; and this is where the problem begins.
+
+To solve the conflicts, this package uses [shading](https://maven.apache.org/plugins/maven-shade-plugin/) and
+includes the HttpClient in the jar file itself but with a modified package name. There are no changes done
+to the implementation.
+
+Or to be more detailed, this packages includes
+* HtmlUnit itself
+* htmlunit-core-js
+* htmlunit-cssparser
+
+* neko-htmlunit
+* xml-apis/xml-apis:jar
+* xerces/xercesImpl
+
+* httpcomponents/httpmime:jar (shaded)
+* httpcomponents/httpclient (shaded)
+* httpcomponents/httpcore (shaded)
+
+All the other dependencies are still denpendencies of this package (see the pom.xml for more).
+
+
+Contributing
+--------
+Pull Requests and and all other Community Contributions are essential for open source software.
+Every contribution - from bug reports to feature requests, typos to full new features - are greatly appreciated.
+
+
+License
+--------
+
+This project is licensed under the Apache 2.0 License
