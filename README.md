@@ -16,7 +16,7 @@ Version 2.56.0 / December 12, 2021
 
 **Download**
 
-For maven, you would add:
+For maven, you simply use this dependency instead of the usual htmlunit dependency:
 
     <dependency>
         <groupId>net.sourceforge.htmlunit</groupId>
@@ -55,6 +55,26 @@ Contributing
 --------
 Pull Requests and and all other Community Contributions are essential for open source software.
 Every contribution - from bug reports to feature requests, typos to full new features - are greatly appreciated.
+
+
+Latest CI build
+--------
+Usually snapshot builds are available based on the latest HtmlUnit code.
+
+If you use maven please add:
+
+    <dependency>
+        <groupId>net.sourceforge.htmlunit</groupId>
+        <artifactId>htmlunit-android</artifactId>
+        <version>2.56.0-snapshot</version>
+    </dependency>
+
+You have to add the sonatype snapshot repository to your pom distributionManagement section also:
+
+    <snapshotRepository>
+        <id>sonatype-nexus-snapshots</id>
+        <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
 
 
 License
