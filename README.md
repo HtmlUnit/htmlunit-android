@@ -21,7 +21,7 @@ For maven, you simply use this dependency instead of the usual htmlunit dependen
     <dependency>
         <groupId>net.sourceforge.htmlunit</groupId>
         <artifactId>htmlunit-android</artifactId>
-        <version>2.56.0</version>
+        <version>2.58.0</version>
     </dependency>
 
 Overview
@@ -66,7 +66,7 @@ If you use maven please add:
     <dependency>
         <groupId>net.sourceforge.htmlunit</groupId>
         <artifactId>htmlunit-android</artifactId>
-        <version>2.56.0-SNAPSHOT</version>
+        <version>2.58.0-SNAPSHOT</version>
     </dependency>
 
 You have to add the sonatype snapshot repository to your pom distributionManagement section also:
