@@ -29,7 +29,7 @@ Overview
 HtmlUnit is a "GUI-Less browser for Java programs" usually runs on every platform supported by java.
 
 But Android is a bit different because the Android SDK already includes some (old) classes from  the Apache HttpClient.
-HtmlUnit also uses the HttpClient but a more recent version; and this is where the problem begins.
+HtmlUnit uses a more recent version HttpClient; and this is where the problem begins.
 
 To solve the conflicts, this package uses [shading](https://maven.apache.org/plugins/maven-shade-plugin/) and
 includes the HttpClient in the jar file itself but with a modified package name. There are no changes done
@@ -48,7 +48,7 @@ Or to be more detailed, this packages includes
 * httpcomponents/httpclient (shaded)
 * httpcomponents/httpcore (shaded)
 
-All the other dependencies are still denpendencies of this package (see the pom.xml for more).
+All the other dependencies are still dependencies of this package (see the pom.xml for more).
 
 
 Contributing
