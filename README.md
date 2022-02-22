@@ -1,10 +1,10 @@
 # HtmlUnit Android package
 
-Version 2.56.0 / December 12, 2021
+Version 2.58.0 / February 22, 2022
 
 :heart: [Sponsor](https://github.com/sponsors/rbri)
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.sourceforge.htmlunit/htmlunit/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.sourceforge.htmlunit/htmlunit)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.sourceforge.htmlunit/htmlunit-android/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.sourceforge.htmlunit/htmlunit-android)
 
 **Homepage**
 
