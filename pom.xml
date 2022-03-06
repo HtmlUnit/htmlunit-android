@@ -80,6 +80,8 @@
                                         <exclude>META-INF/*.RSA</exclude>
                                         <exclude>META-INF/DEPENDENCIES</exclude>
                                         <exclude>META-INF/NOTICE</exclude>
+
+                                        <exclude>com/gargoylesoftware/htmlunit/**/package-info.class</exclude>
                                     </excludes>
                                 </filter>
                             </filters>
