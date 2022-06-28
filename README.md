@@ -47,6 +47,7 @@ Or to be more detailed, this packages includes
 * httpcomponents/httpmime:jar (shaded)
 * httpcomponents/httpclient (shaded)
 * httpcomponents/httpcore (shaded)
+* commons-codec/commons-codec (shaded)
 
 All the other dependencies are still dependencies of this package (see the pom.xml for more).
 
@@ -66,7 +67,7 @@ If you use maven please add:
     <dependency>
         <groupId>net.sourceforge.htmlunit</groupId>
         <artifactId>htmlunit-android</artifactId>
-        <version>2.60.0-SNAPSHOT</version>
+        <version>2.63.0-SNAPSHOT</version>
     </dependency>
 
 You have to add the sonatype snapshot repository to your pom distributionManagement section also:
