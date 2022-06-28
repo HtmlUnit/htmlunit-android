@@ -218,12 +218,6 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.brotli</groupId>
-      <artifactId>dec</artifactId>
-      <version>0.1.2</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>com.shapesecurity</groupId>
       <artifactId>salvation2</artifactId>
       <version>3.0.0</version>
@@ -234,6 +228,12 @@
           <groupId>com.google.code.findbugs</groupId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.jetty.websocket</groupId>
+      <artifactId>websocket-client</artifactId>
+      <version>9.4.46.v20220331</version>
+      <scope>compile</scope>
     </dependency>
   </dependencies>
   <distributionManagement>

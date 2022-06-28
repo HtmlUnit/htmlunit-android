@@ -22,11 +22,12 @@
   <classpathentry kind="var" path="M2_REPO/commons-codec/commons-codec/1.15/commons-codec-1.15.jar" sourcepath="M2_REPO/commons-codec/commons-codec/1.15/commons-codec-1.15-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/brotli/dec/0.1.2/dec-0.1.2.jar" sourcepath="M2_REPO/org/brotli/dec/0.1.2/dec-0.1.2-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/shapesecurity/salvation2/3.0.0/salvation2-3.0.0.jar" sourcepath="M2_REPO/com/shapesecurity/salvation2/3.0.0/salvation2-3.0.0-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/eclipse/jetty/websocket/websocket-client/9.4.46.v20220331/websocket-client-9.4.46.v20220331.jar" sourcepath="M2_REPO/org/eclipse/jetty/websocket/websocket-client/9.4.46.v20220331/websocket-client-9.4.46.v20220331-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/eclipse/jetty/jetty-client/9.4.46.v20220331/jetty-client-9.4.46.v20220331.jar" sourcepath="M2_REPO/org/eclipse/jetty/jetty-client/9.4.46.v20220331/jetty-client-9.4.46.v20220331-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/eclipse/jetty/jetty-http/9.4.46.v20220331/jetty-http-9.4.46.v20220331.jar" sourcepath="M2_REPO/org/eclipse/jetty/jetty-http/9.4.46.v20220331/jetty-http-9.4.46.v20220331-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/eclipse/jetty/jetty-util/9.4.46.v20220331/jetty-util-9.4.46.v20220331.jar" sourcepath="M2_REPO/org/eclipse/jetty/jetty-util/9.4.46.v20220331/jetty-util-9.4.46.v20220331-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/eclipse/jetty/jetty-io/9.4.46.v20220331/jetty-io-9.4.46.v20220331.jar" sourcepath="M2_REPO/org/eclipse/jetty/jetty-io/9.4.46.v20220331/jetty-io-9.4.46.v20220331-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/eclipse/jetty/websocket/websocket-common/9.4.46.v20220331/websocket-common-9.4.46.v20220331.jar" sourcepath="M2_REPO/org/eclipse/jetty/websocket/websocket-common/9.4.46.v20220331/websocket-common-9.4.46.v20220331-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/eclipse/jetty/websocket/websocket-api/9.4.46.v20220331/websocket-api-9.4.46.v20220331.jar" sourcepath="M2_REPO/org/eclipse/jetty/websocket/websocket-api/9.4.46.v20220331/websocket-api-9.4.46.v20220331-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/eclipse/jetty/websocket/websocket-client/9.4.19.v20190610/websocket-client-9.4.19.v20190610.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/eclipse/jetty/jetty-client/9.4.19.v20190610/jetty-client-9.4.19.v20190610.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/eclipse/jetty/jetty-http/9.4.19.v20190610/jetty-http-9.4.19.v20190610.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/eclipse/jetty/jetty-util/9.4.19.v20190610/jetty-util-9.4.19.v20190610.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/eclipse/jetty/jetty-io/9.4.19.v20190610/jetty-io-9.4.19.v20190610.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/eclipse/jetty/websocket/websocket-common/9.4.19.v20190610/websocket-common-9.4.19.v20190610.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/eclipse/jetty/websocket/websocket-api/9.4.19.v20190610/websocket-api-9.4.19.v20190610.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/eclipse/jetty/jetty-xml/9.4.19.v20190610/jetty-xml-9.4.19.v20190610.jar"/>
 </classpath>
