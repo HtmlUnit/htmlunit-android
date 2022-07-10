@@ -218,6 +218,12 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>org.brotli</groupId>
+      <artifactId>dec</artifactId>
+      <version>0.1.2</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>com.shapesecurity</groupId>
       <artifactId>salvation2</artifactId>
       <version>3.0.0</version>
@@ -232,7 +238,7 @@
     <dependency>
       <groupId>org.eclipse.jetty.websocket</groupId>
       <artifactId>websocket-client</artifactId>
-      <version>9.4.46.v20220331</version>
+      <version>9.4.19.v20190610</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>
@@ -252,7 +258,7 @@
     </site>
   </distributionManagement>
   <properties>
-    <jetty.version>9.4.46.v20220331</jetty.version>
+    <jetty.version>9.4.19.v20190610</jetty.version>
     <htmlunit.version>2.63.0-SNAPSHOT</htmlunit.version>
     <maven.compiler.source>8</maven.compiler.source>
     <additionalparam>-Xdoclint:none</additionalparam>
