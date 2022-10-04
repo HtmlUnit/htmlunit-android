@@ -83,7 +83,6 @@ public class Main {
 //        System.out.println(org.apache.xmlcommons.Version.getVersion());
 //        System.out.println(org.apache.xml.serializer.Version.getVersion());
 //        System.out.println(org.apache.xerces.impl.Version.getVersion());
-//        System.out.println(org.apache.xalan.Version.getVersion());
 //
         System.out.println();
         System.out.println();
