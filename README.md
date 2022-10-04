@@ -1,6 +1,6 @@
 # HtmlUnit Android package
 
-Version 2.64.0 / August 18, 2022
+Version 2.65.0 / October 04, 2022
 
 :heart: [Sponsor](https://github.com/sponsors/rbri)
 
@@ -21,7 +21,7 @@ For maven, you simply use this dependency instead of the usual htmlunit dependen
     <dependency>
         <groupId>net.sourceforge.htmlunit</groupId>
         <artifactId>htmlunit-android</artifactId>
-        <version>2.64.0</version>
+        <version>2.65.0</version>
     </dependency>
 
 Overview
