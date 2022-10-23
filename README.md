@@ -1,6 +1,6 @@
 # HtmlUnit Android package
 
-Version 2.65.0 / October 04, 2022
+Version 2.66.0 / October 23, 2022
 
 :heart: [Sponsor](https://github.com/sponsors/rbri)
 
@@ -14,15 +14,27 @@ Version 2.65.0 / October 04, 2022
 
 [HtmlUnit@Twitter](https://twitter.com/HtmlUnit "https://twitter.com/HtmlUnit")
 
-**Download**
+## Get it!
 
-For maven, you simply use this dependency instead of the usual htmlunit dependency:
+### Maven
 
-    <dependency>
-        <groupId>net.sourceforge.htmlunit</groupId>
-        <artifactId>htmlunit-android</artifactId>
-        <version>2.65.0</version>
-    </dependency>
+Add to your `pom.xml`:
+
+```xml
+<dependency>
+    <groupId>net.sourceforge.htmlunit</groupId>
+    <artifactId>htmlunit-android</artifactId>
+    <version>2.66.0</version>
+</dependency>
+```
+
+### Gradle
+
+Add to your `build.gradle`:
+
+```groovy
+implementation group: 'net.sourceforge.htmlunit', name: 'htmlunit-android', version: '2.66.0'
+```
 
 Overview
 --------
@@ -51,6 +63,9 @@ Or to be more detailed, this packages includes
 
 All the other dependencies are still dependencies of this package (see the pom.xml for more).
 
+**Android 7 (Nougat)**
+Due to the lack of support for ThreadLocal#withInitial, the connons-lang version 2.10 used by HtmlUnit does not work.
+Therefore, you need to override the dependency and use commons-lang 2.5 instead.
 
 Contributing
 --------
@@ -58,7 +73,7 @@ Pull Requests and and all other Community Contributions are essential for open s
 Every contribution - from bug reports to feature requests, typos to full new features - are greatly appreciated.
 
 
-Latest CI build
+Last CI build
 --------
 Usually snapshot builds are available based on the latest HtmlUnit code.
 
@@ -67,7 +82,7 @@ If you use maven please add:
     <dependency>
         <groupId>net.sourceforge.htmlunit</groupId>
         <artifactId>htmlunit-android</artifactId>
-        <version>2.65.0-SNAPSHOT</version>
+        <version>2.67.0-SNAPSHOT</version>
     </dependency>
 
 You have to add the sonatype snapshot repository to your pom distributionManagement section also:
