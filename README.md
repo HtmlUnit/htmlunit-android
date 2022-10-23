@@ -64,6 +64,7 @@ Or to be more detailed, this packages includes
 All the other dependencies are still dependencies of this package (see the pom.xml for more).
 
 **Android 7 (Nougat)**
+
 Due to the lack of support for ThreadLocal#withInitial, the connons-lang version 2.10 used by HtmlUnit does not work.
 Therefore, you need to override the dependency and use commons-lang 2.5 instead.
 
