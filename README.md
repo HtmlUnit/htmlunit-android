@@ -78,21 +78,54 @@ Last CI build
 --------
 Usually snapshot builds are available based on the latest HtmlUnit code.
 
-If you use maven please add:
+Read on if you want to try the latest bleeding-edge snapshot.
 
-    <dependency>
-        <groupId>net.sourceforge.htmlunit</groupId>
-        <artifactId>htmlunit-android</artifactId>
-        <version>2.67.0-SNAPSHOT</version>
-    </dependency>
+### Maven
 
-You have to add the sonatype snapshot repository to your pom distributionManagement section also:
+Add the snapshot repository and dependency to your `pom.xml`: 
 
-    <snapshotRepository>
-        <id>sonatype-nexus-snapshots</id>
-        <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
+```xml
+    <!-- ... --> 
+    <repository>
+      <id>OSS Sonatype snapshots</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+    </repository>
 
+    <!-- ... -->
+    <dependencies>
+      <dependency>
+          <groupId>net.sourceforge.htmlunit</groupId>
+          <artifactId>htmlunit-android</artifactId>
+          <version>2.67.0-SNAPSHOT</version>
+      </dependency>
+      <!-- ... -->
+    </dependencies>
+
+    <!-- ... -->
+```
+  
+### Gradle
+
+Add the snapshot repository and dependency to your `build.gradle`:
+
+```groovy
+repositories {
+  maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+  // ...
+}
+// ...
+dependencies {
+    implementation group: 'net.sourceforge.htmlunit', name: 'htmlunit-android', version: '2.67.0-SNAPSHOT'
+  // ...
+}
+```
 
 License
 --------
