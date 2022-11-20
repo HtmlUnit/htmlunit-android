@@ -1,6 +1,6 @@
 # HtmlUnit Android package
 
-Version 2.66.0 / October 23, 2022
+Version 2.67.0 / November 20, 2022
 
 :heart: [Sponsor](https://github.com/sponsors/rbri)
 
@@ -24,7 +24,7 @@ Add to your `pom.xml`:
 <dependency>
     <groupId>net.sourceforge.htmlunit</groupId>
     <artifactId>htmlunit-android</artifactId>
-    <version>2.66.0</version>
+    <version>2.67.0</version>
 </dependency>
 ```
 
@@ -33,7 +33,7 @@ Add to your `pom.xml`:
 Add to your `build.gradle`:
 
 ```groovy
-implementation group: 'net.sourceforge.htmlunit', name: 'htmlunit-android', version: '2.66.0'
+implementation group: 'net.sourceforge.htmlunit', name: 'htmlunit-android', version: '2.67.0'
 ```
 
 Overview
@@ -103,7 +103,7 @@ Add the snapshot repository and dependency to your `pom.xml`:
       <dependency>
           <groupId>net.sourceforge.htmlunit</groupId>
           <artifactId>htmlunit-android</artifactId>
-          <version>2.67.0-SNAPSHOT</version>
+          <version>2.68.0-SNAPSHOT</version>
       </dependency>
       <!-- ... -->
     </dependencies>
@@ -122,7 +122,7 @@ repositories {
 }
 // ...
 dependencies {
-    implementation group: 'net.sourceforge.htmlunit', name: 'htmlunit-android', version: '2.67.0-SNAPSHOT'
+    implementation group: 'net.sourceforge.htmlunit', name: 'htmlunit-android', version: '2.68.0-SNAPSHOT'
   // ...
 }
 ```
