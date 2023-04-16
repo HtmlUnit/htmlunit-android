@@ -1,14 +1,14 @@
 # HtmlUnit Android package
 
-Version 2.67.0 / November 20, 2022
+Version 3.1.0 / April 17, 2023
 
 :heart: [Sponsor](https://github.com/sponsors/rbri)
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.sourceforge.htmlunit/htmlunit-android/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.sourceforge.htmlunit/htmlunit-android)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.htmlunit/htmlunit3-android/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.htmlunit/htmlunit3-android)
 
 **Homepage**
 
-[htmlunit.sourceforge.io](https://github.com/HtmlUnit/htmlunit-android)
+[https://github.com/HtmlUnit/htmlunit-android](https://github.com/HtmlUnit/htmlunit-android)
 
 **News**
 
@@ -22,9 +22,9 @@ Add to your `pom.xml`:
 
 ```xml
 <dependency>
-    <groupId>net.sourceforge.htmlunit</groupId>
-    <artifactId>htmlunit-android</artifactId>
-    <version>2.67.0</version>
+    <groupId>org.htmlunit</groupId>
+    <artifactId>htmlunit3-android</artifactId>
+    <version>3.1.0</version>
 </dependency>
 ```
 
@@ -33,7 +33,7 @@ Add to your `pom.xml`:
 Add to your `build.gradle`:
 
 ```groovy
-implementation group: 'net.sourceforge.htmlunit', name: 'htmlunit-android', version: '2.67.0'
+implementation group: 'org.htmlunit', name: 'htmlunit3-android', version: '3.1.0'
 ```
 
 Overview
@@ -44,22 +44,21 @@ But Android is a bit different because the Android SDK already includes some (ol
 HtmlUnit uses a more recent version HttpClient; and this is where the problem begins.
 
 To solve the conflicts, this package uses [shading](https://maven.apache.org/plugins/maven-shade-plugin/) and
-includes the HttpClient in the jar file itself but with a modified package name. There are no changes done
-to the implementation.
+includes the HttpClient and apache commons-codec in the jar file itself but with a modified package name.
+There are no changes done to the implementation.
 
 Or to be more detailed, this packages includes
-* HtmlUnit itself
-* htmlunit-core-js
-* htmlunit-cssparser
+* HtmlUnit itself (org.htmlunit, netscape.javascript)
+* htmlunit-core-js (org.htmlunit.corejs)
+* htmlunit-cssparser (org.htmlunit.cssparser)
+* htmlunit-xpath (org.htmlunit.xpath)
+* neko-htmlunit (org.htmlunit.cyberneko)
 
-* neko-htmlunit
-* xml-apis/xml-apis:jar
-* xerces/xercesImpl
+* httpcomponents/httpmime:jar (shaded org.apache.http -> org.htmlunit.org.apache.http)
+* httpcomponents/httpclient (shaded org.apache.http -> org.htmlunit.org.apache.http)
+* httpcomponents/httpcore (shaded org.apache.http -> org.htmlunit.org.apache.http)
 
-* httpcomponents/httpmime:jar (shaded)
-* httpcomponents/httpclient (shaded)
-* httpcomponents/httpcore (shaded)
-* commons-codec/commons-codec (shaded)
+* commons-codec/commons-codec (shaded org.apache.commons.codec -> org.htmlunit.org.apache.commons.codec)
 
 All the other dependencies are still dependencies of this package (see the pom.xml for more).
 
@@ -88,7 +87,7 @@ Add the snapshot repository and dependency to your `pom.xml`:
     <!-- ... --> 
     <repository>
       <id>OSS Sonatype snapshots</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+      <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
       <snapshots>
         <enabled>true</enabled>
         <updatePolicy>always</updatePolicy>
@@ -102,8 +101,8 @@ Add the snapshot repository and dependency to your `pom.xml`:
     <dependencies>
       <dependency>
           <groupId>net.sourceforge.htmlunit</groupId>
-          <artifactId>htmlunit-android</artifactId>
-          <version>2.68.0-SNAPSHOT</version>
+          <artifactId>htmlunit3-android</artifactId>
+          <version>3.2.0-SNAPSHOT</version>
       </dependency>
       <!-- ... -->
     </dependencies>
@@ -117,12 +116,12 @@ Add the snapshot repository and dependency to your `build.gradle`:
 
 ```groovy
 repositories {
-  maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+  maven { url "https://os1.oss.sonatype.org/content/repositories/snapshots" }
   // ...
 }
 // ...
 dependencies {
-    implementation group: 'net.sourceforge.htmlunit', name: 'htmlunit-android', version: '2.68.0-SNAPSHOT'
+    implementation group: 'org.htmlunit', name: 'htmlunit3-android', version: '3.2.0-SNAPSHOT'
   // ...
 }
 ```

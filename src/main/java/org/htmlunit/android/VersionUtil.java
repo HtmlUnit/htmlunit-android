@@ -14,7 +14,7 @@
  */
 
 
-package com.gargoylesoftware.htmlunit.android;
+package org.htmlunit.android;
 
 import java.io.InputStream;
 import java.net.URL;
