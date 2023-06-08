@@ -1,6 +1,6 @@
 # HtmlUnit Android package
 
-Version 3.1.0 / April 27, 2023
+Version 3.3.0 / June 08, 2023
 
 :heart: [Sponsor](https://github.com/sponsors/rbri)
 
@@ -24,7 +24,7 @@ Add to your `pom.xml`:
 <dependency>
     <groupId>org.htmlunit</groupId>
     <artifactId>htmlunit3-android</artifactId>
-    <version>3.1.0</version>
+    <version>3.3.0</version>
 </dependency>
 ```
 
@@ -33,7 +33,7 @@ Add to your `pom.xml`:
 Add to your `build.gradle`:
 
 ```groovy
-implementation group: 'org.htmlunit', name: 'htmlunit3-android', version: '3.1.0'
+implementation group: 'org.htmlunit', name: 'htmlunit3-android', version: '3.3.0'
 ```
 
 Overview
@@ -102,7 +102,7 @@ Add the snapshot repository and dependency to your `pom.xml`:
       <dependency>
           <groupId>net.sourceforge.htmlunit</groupId>
           <artifactId>htmlunit3-android</artifactId>
-          <version>3.2.0-SNAPSHOT</version>
+          <version>3.4.0-SNAPSHOT</version>
       </dependency>
       <!-- ... -->
     </dependencies>
@@ -121,7 +121,7 @@ repositories {
 }
 // ...
 dependencies {
-    implementation group: 'org.htmlunit', name: 'htmlunit3-android', version: '3.2.0-SNAPSHOT'
+    implementation group: 'org.htmlunit', name: 'htmlunit3-android', version: '3.4.0-SNAPSHOT'
   // ...
 }
 ```
