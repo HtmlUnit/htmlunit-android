@@ -1,6 +1,6 @@
 # HtmlUnit Android package
 
-Version 3.3.0 / June 08, 2023
+Version 3.5.0 / August 20, 2023
 
 :heart: [Sponsor](https://github.com/sponsors/rbri)
 
@@ -24,7 +24,7 @@ Add to your `pom.xml`:
 <dependency>
     <groupId>org.htmlunit</groupId>
     <artifactId>htmlunit3-android</artifactId>
-    <version>3.3.0</version>
+    <version>3.5.0</version>
 </dependency>
 ```
 
@@ -33,7 +33,7 @@ Add to your `pom.xml`:
 Add to your `build.gradle`:
 
 ```groovy
-implementation group: 'org.htmlunit', name: 'htmlunit3-android', version: '3.3.0'
+implementation group: 'org.htmlunit', name: 'htmlunit3-android', version: '3.5.0'
 ```
 
 Overview
@@ -64,7 +64,7 @@ All the other dependencies are still dependencies of this package (see the pom.x
 
 **Android 7 (Nougat)**
 
-Due to the lack of support for ThreadLocal#withInitial, the connons-io version 2.10 used by HtmlUnit does not work.
+Due to the lack of support for ThreadLocal#withInitial, the connons-io version 2.13.0 used by HtmlUnit does not work.
 Therefore, you need to override the dependency and use commons-io 2.5 instead.
 
 Contributing
@@ -102,7 +102,7 @@ Add the snapshot repository and dependency to your `pom.xml`:
       <dependency>
           <groupId>net.sourceforge.htmlunit</groupId>
           <artifactId>htmlunit3-android</artifactId>
-          <version>3.4.0-SNAPSHOT</version>
+          <version>3.6.0-SNAPSHOT</version>
       </dependency>
       <!-- ... -->
     </dependencies>
@@ -121,7 +121,7 @@ repositories {
 }
 // ...
 dependencies {
-    implementation group: 'org.htmlunit', name: 'htmlunit3-android', version: '3.4.0-SNAPSHOT'
+    implementation group: 'org.htmlunit', name: 'htmlunit3-android', version: '3.6.0-SNAPSHOT'
   // ...
 }
 ```
