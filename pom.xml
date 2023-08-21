@@ -29,7 +29,7 @@
         <htmlunit.version>3.5.0</htmlunit.version>
         <!-- overwrite the jetty version to be compatible with older android api's -->
         <!-- see https://github.com/HtmlUnit/htmlunit-android/issues/5 -->
-        <jetty.version>9.4.19.v20190610</jetty.version>
+        <jetty.version>9.4.51.v20230217</jetty.version>
     </properties>
 
     <dependencies>
