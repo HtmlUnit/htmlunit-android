@@ -7,3 +7,5 @@ updates:
     ignore:
       # ignore because it does not work with java 8
       - dependency-name: "org.apache.maven.plugins:maven-site-plugin"
+      # ignore because newer versions do not work on android
+      - dependency-name: "org.eclipse.jetty.websocket:websocket-client"
