@@ -116,7 +116,7 @@ Add the snapshot repository and dependency to your `build.gradle`:
 
 ```groovy
 repositories {
-  maven { url "https://os1.oss.sonatype.org/content/repositories/snapshots" }
+  maven { url "https://s01.oss.sonatype.org/content/repositories/snapshots" }
   // ...
 }
 // ...
