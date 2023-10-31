@@ -24,7 +24,7 @@ Add to your `pom.xml`:
 <dependency>
     <groupId>org.htmlunit</groupId>
     <artifactId>htmlunit3-android</artifactId>
-    <version>3.5.0</version>
+    <version>3.7.0</version>
 </dependency>
 ```
 
@@ -33,7 +33,7 @@ Add to your `pom.xml`:
 Add to your `build.gradle`:
 
 ```groovy
-implementation group: 'org.htmlunit', name: 'htmlunit3-android', version: '3.5.0'
+implementation group: 'org.htmlunit', name: 'htmlunit3-android', version: '3.7.0'
 ```
 
 Overview
@@ -102,7 +102,7 @@ Add the snapshot repository and dependency to your `pom.xml`:
       <dependency>
           <groupId>net.sourceforge.htmlunit</groupId>
           <artifactId>htmlunit3-android</artifactId>
-          <version>3.6.0-SNAPSHOT</version>
+          <version>3.8.0-SNAPSHOT</version>
       </dependency>
       <!-- ... -->
     </dependencies>
@@ -121,7 +121,7 @@ repositories {
 }
 // ...
 dependencies {
-    implementation group: 'org.htmlunit', name: 'htmlunit3-android', version: '3.6.0-SNAPSHOT'
+    implementation group: 'org.htmlunit', name: 'htmlunit3-android', version: '3.8.0-SNAPSHOT'
   // ...
 }
 ```
