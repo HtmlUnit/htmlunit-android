@@ -1,6 +1,6 @@
 # HtmlUnit Android package
 
-Version 3.5.0 / August 20, 2023
+Version 3.7.0 / October 31, 2023
 
 :heart: [Sponsor](https://github.com/sponsors/rbri)
 
