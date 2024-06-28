@@ -1,6 +1,6 @@
 # HtmlUnit Android package
 
-Version 3.7.0 / October 31, 2023
+Version 4.3.0 / June 28, 2024
 
 :heart: [Sponsor](https://github.com/sponsors/rbri)
 
@@ -24,7 +24,7 @@ Add to your `pom.xml`:
 <dependency>
     <groupId>org.htmlunit</groupId>
     <artifactId>htmlunit3-android</artifactId>
-    <version>3.7.0</version>
+    <version>4.4.0</version>
 </dependency>
 ```
 
@@ -33,7 +33,7 @@ Add to your `pom.xml`:
 Add to your `build.gradle`:
 
 ```groovy
-implementation group: 'org.htmlunit', name: 'htmlunit3-android', version: '3.7.0'
+implementation group: 'org.htmlunit', name: 'htmlunit3-android', version: '4.3.0'
 ```
 
 Overview
@@ -50,8 +50,10 @@ There are no changes done to the implementation.
 Or to be more detailed, this packages includes
 * HtmlUnit itself (org.htmlunit, netscape.javascript)
 * htmlunit-core-js (org.htmlunit.corejs)
+* htmlunit-csp (org.htmlunit.csp)
 * htmlunit-cssparser (org.htmlunit.cssparser)
 * htmlunit-xpath (org.htmlunit.xpath)
+* htmlunit-websocket-client (org.htmlunit.websocket)
 * neko-htmlunit (org.htmlunit.cyberneko)
 
 * httpcomponents/httpmime:jar (shaded org.apache.http -> org.htmlunit.org.apache.http)
@@ -64,7 +66,7 @@ All the other dependencies are still dependencies of this package (see the pom.x
 
 **Android 7 (Nougat)**
 
-Due to the lack of support for ThreadLocal#withInitial, the connons-io version 2.13.0 used by HtmlUnit does not work.
+Due to the lack of support for ThreadLocal#withInitial, the connons-io version 2.16.1 used by HtmlUnit does not work.
 Therefore, you need to override the dependency and use commons-io 2.5 instead.
 
 Contributing
@@ -102,7 +104,7 @@ Add the snapshot repository and dependency to your `pom.xml`:
       <dependency>
           <groupId>net.sourceforge.htmlunit</groupId>
           <artifactId>htmlunit3-android</artifactId>
-          <version>3.8.0-SNAPSHOT</version>
+          <version>4.4.0-SNAPSHOT</version>
       </dependency>
       <!-- ... -->
     </dependencies>
